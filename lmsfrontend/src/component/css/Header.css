@@ -2,12 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 50px;
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(10px) saturate(180%);
-    -webkit-backdrop-filter: blur(10px) saturate(180%);
-    border-radius: 16px;
+    backdrop-filter: blur(10px) saturate(190%);
+    -webkit-backdrop-filter: blur(100px) saturate(180%);
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
         .logo {
@@ -44,10 +43,7 @@
         .nav-links a:hover {
             text-decoration: underline;
         }
-        .nav-links a:after {
-            content: ' \25BC'; /* Down arrow */
-            font-size: 10px;
-        }
+    
         .icons {
             display: flex;
             align-items: center;
@@ -88,4 +84,43 @@
             background-color: #fff;
             color: #28a745;
             border: 1px solid #28a745;
-        }
+}
+
+/* Responsive styles for header */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 20px;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .nav-links li {
+    margin: 8px 0;
+  }
+  .buttons {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 10px 5px;
+  }
+  .logo span {
+    font-size: 18px;
+  }
+  .btn {
+    padding: 6px 12px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .nav-links a {
+    font-size: 14px;
+  }
+}
