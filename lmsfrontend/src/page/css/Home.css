@@ -1,0 +1,315 @@
+.skills-section {
+       overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    padding-bottom:  40px;
+}
+container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    gap: 40px; /* Space between columns */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+       background-color: #f8f8f8;
+}
+
+
+
+/* Image Column Styles */
+.image-column {
+    flex: 1; /* Takes up 1 part of the flexible space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+     padding-right: 120px;
+    padding-left: 210px; /* Adjust as needed */
+}
+
+.image-stack {
+    display: flex;
+    gap: 15px; /* Space between images */
+}
+
+.image-item1 {
+    width: 220px; /* Adjust image width */
+    height: 400px; /* Adjust image height */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+     object-fit: cover;
+}
+.image-item {
+    width: 180px; /* Adjust image width */
+    height: 280px; /* Adjust image height */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-top: 50px;
+}
+
+
+/* Content Column Styles */
+.content-column {
+    flex: 1.5; /* Takes up 1.5 parts of the flexible space */
+    padding-right: 120px;
+    padding-left: 20px;
+}
+
+.content-column h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #52a1f0;
+}
+
+.highlight-green {
+    color: #3bb77a; /* Green color from the image */
+}
+
+.content-column p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Card Styles (Mission & Vision) */
+.card-actions {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f9fdfc; /* Lighter background for cards */
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    min-width: 50px;
+    height: 50px;
+    background-color: #e0f7eb; /* Light green background for icon */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    color: #3bb77a; /* Icon color */
+    font-size: 1.5em;
+}
+
+.card-content h3 {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 0;
+    color: #666;
+}
+
+/* Discover More Button */
+.discover-button {
+    background-color: #3bb77a;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(59, 183, 122, 0.3);
+}
+
+.discover-button:hover {
+    background-color: #2e9f65;
+    transform: translateY(-2px);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.achievement-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.fun-fact {
+    color: #28a745;
+    font-size: 14px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.fun-fact::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #28a745;
+}
+
+h2 {
+    color: #1a2e5a;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+h2 span {
+    color: #28a745;
+}
+
+.achievement-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card2 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card2 i {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.card2 .number {
+    color: #1a2e5a;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card2 .label {
+    color: #6c757d;
+    font-size: 16px;
+}
+
+.card2:nth-child(1) i { color: #007bff; }
+.card2:nth-child(2) i { color: #fd7e14; }
+.card2:nth-child(3) i { color: #28a745; }
+.card2:nth-child(4) i { color: #dc3545; }
+
+.card2:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Animation for cards on load */
+.card2.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* JavaScript to trigger animation */
+
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .image-column {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .image-stack {
+        flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+        justify-content: center;
+    }
+
+    .image-item {
+        width: 150px;
+        height: 230px;
+    }
+
+    .content-column {
+        padding-right: 0;
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .content-column h1 {
+        font-size: 2.2em;
+    }
+
+    .content-column p {
+        font-size: 1em;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .icon-box {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .image-stack {
+        flex-direction: column; /* Stack images vertically on very small screens */
+        align-items: center;
+    }
+
+    .image-item {
+        width: 80%; /* Make images take more width */
+        height: auto;
+    }
+
+    .content-column h1 {
+        font-size: 1.8em;
+    }
+
+    .discover-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}

@@ -12,12 +12,12 @@ const Explore = () =>{
       <a href="#" className="explore-btn">EXPLORE <span>&rarr;</span></a>
     </div>
     <div className="card">
-      <h2>Experienced Teachers</h2>
+      <h2>AI Lead Learning</h2>
       <p>Lorem ipsum dolor sit amet, consectetur notted adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
       <a href="#" className="explore-btn">EXPLORE <span>&rarr;</span></a>
     </div>
     <div className="card">
-      <h2>Delicious Food</h2>
+      <h2>Video & Simulation Lead Learning</h2>
       <p>Lorem ipsum dolor sit amet, consectetur notted adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
       <a href="#" className="explore-btn">EXPLORE <span>&rarr;</span></a>
     </div>
