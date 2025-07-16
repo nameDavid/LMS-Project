@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        /* Basic styling for better presentation */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d8e4f8;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            
+        }
+
+        form{
+            background-color: #fafafa;
+            border-radius: 15px;
+            padding: 12px;
+            width: 400px;
+            
+            
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #27ae60;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #2ecf72;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #38ff99;
+        }
+        h2{
+            color: #27ae60;
+            
+        }
+        .signupform{
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="signupform">
+        <img src="/lmsfrontend/public/vite.svg" alt="picture" srcset="">
+ <form action="/submit" method="post">
+        <h2>Sign Up</h2>
+        <div class="form-group">
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" required>
+        </div>
+        <div class="form-group">
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" required>
+        </div>
+        <div class="form-group">
+            <label for="course">Course:</label>
+            <input type="text" name="course" id="course">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div class="form-group">
+            <label for="cpassword"> Confirm Password:</label>
+            <input type="password" name="cpassword" id="cpassword" required>
+        </div>
+        <button type="submit">Sign Up</button>
+    </form>
+    </div>
+   
+</body>
+</html>
